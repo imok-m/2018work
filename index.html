@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <div>
+     ( <input type="text" id="x" /> +
+      <input type="text" id="y" /> )/
+      <input type="text" id="z" /> =
+      <input type="text" id="ans" readonly />
+    </div>
+    <button id="calc">ŒvŽZ</button>
+  </head>
+  <body></body>
+</html>
+<script type='text/javascript'>
+  var x = document.getElementById("x");
+  console.log(x);
+  var y = document.getElementById("y");
+  console.log(y);
+  var z = document.getElementById("z");
+  console.log(z);
+  var ans = document.getElementById("ans");
+  console.log(ans);
+  var calc = document.getElementById("calc")
+  console.log(calc)
+  calc.addEventListener("click", function() {
+    console.log("clicked");
+    console.log(x.value)
+    console.log(y.value)
+    console.log(x.value+y.value)
+    var xi = parseInt(x.value);
+    console.log(xi);
+    var yi = parseInt(y.value);
+    console.log(yi);
+    var zi = parseInt(z.value);
+    console.log(zi)
+    console.log((xi+yi)/zi);
+    ans.value = (xi+yi)/zi
+  });
+</script>
